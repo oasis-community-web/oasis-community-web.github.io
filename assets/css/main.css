@@ -977,9 +977,10 @@ section,
   transition: all 0.3s;
   z-index: -1;
 }
-
-.featured-services .service-item .icon {
-  margin-bottom: 10px;
+.featured-service-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .featured-services .service-item .icon i {
