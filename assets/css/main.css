@@ -977,10 +977,17 @@ section,
   transition: all 0.3s;
   z-index: -1;
 }
-.featured-service-icon-img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
+
+.featured-services .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.featured-services .service-icon-img {
+  width: 36px;
+  height: 36px;
 }
 
 .featured-services .service-item .icon i {
