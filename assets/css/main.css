@@ -978,16 +978,8 @@ section,
   z-index: -1;
 }
 
-.featured-services .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.featured-services .service-icon-img {
-  width: 36px;
-  height: 36px;
+.featured-services .service-item .icon {
+  margin-bottom: 10px;
 }
 
 .featured-services .service-item .icon i {
@@ -1025,7 +1017,6 @@ section,
   inset: 0;
   border-radius: 0px;
 }
-
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
