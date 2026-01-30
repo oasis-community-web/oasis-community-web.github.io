@@ -835,6 +835,73 @@ section,
 }
 
 /*--------------------------------------------------------------
+# News Section
+--------------------------------------------------------------*/
+.news-bar {
+  width: calc(100% - 20px);
+  height: 44px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  border-radius: 12px 12px 12px 12px;         /* Curves all corners */
+  border: 2px solid #000;
+  overflow: hidden;
+  position: relative;
+
+  background: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 25%
+  );
+
+  border-top: 2px solid #000;   /* Black top border */
+  border-bottom: 2px solid #000; /* Black bottom border */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* optional shadow */
+  font-family: var(--heading-font);
+}
+
+.news-label {
+  height: 100%;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.news-marquee {
+  flex: 1;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.news-marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--default-color);
+  margin: 9px;
+
+  animation: news-scroll 18s linear infinite;
+}
+
+@keyframes news-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
